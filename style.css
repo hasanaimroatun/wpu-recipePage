@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src:url(./font/montserrat-regular-webfont.woff2)format('woff2');
+}
+
+.container {
+    padding: 52px 236px;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'nav'
+    'footer';
+}
+
+/* css for header */
+header {
+    grid-area: header;
+}
+
+header .title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63.98px;
+    color: #000;
+}
+
+header .material-symbols-outlined{
+    transform: rotate(90deg);
+    color: #c4c4c4;
+    position: relative;
+    top: -18px;
+    left: -5px;
+}
+
+.description {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #4f4f4f;
+    margin-top: 12px;
+    width: 592px;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+/* css for main */
+
+img {
+    grid-area: main;
+    width: 969px;
+    margin-top: 37px;
+}
+
+/* css for nav */
+
+nav {
+    grid-area: nav;
+    display: flex;
+    gap: 30%;
+}
+
+/* css for mainNav */
+
+.mainNav {
+    grid-area: mainNav;
+    width: 558px;
+}
+
+.iTitle, .insTitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 31.99px;
+    color: #333333;
+    width: 128px;
+    margin-top: 38px;
+}
+
+.iOneTitle, .iTwoTitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 23.99px;
+    color: #333333;
+    width: 277px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.iOneItem, .iTwoItem {
+    display: flex;
+    gap: 10px;
+}
+
+.iTwoItem span {
+    font-style: italic;
+}
+
+label {
+    font-family: 'montserrat', serif;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #333333;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+b {
+    font-weight: 700px;
+}
+
+.labelOne {
+    margin-top: -25px;
+}
+
+.labelTwo {
+    margin-top: -50px;
+}
+
+.insDescription {
+    display: flex;
+    gap: 8px;
+}
+
+.insDesc {
+    font-family: 'montserrat', serif;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.number {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 31.99px;
+    color: #fff;
+    border: 1px solid #f2994a;
+    border-radius: 6px;
+    height: 34px;
+    background-color: #f2994a;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 15px;
+}
+
+.source {
+    font-family: 'montserrat', serif;
+    font-weight: 400px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    color: #bdbdbd;
+    margin-top: 57px;
+}
+
+.source a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* css for sideNav */
+
+.sideNav {
+    grid-area: sideNav;
+    padding-top: 60px;
+}
+
+.sideNav .material-symbols-outlined {
+    position: relative;
+    top: 18px;
+}
+
+.sNav1, .sNav2, .sNav3, .sNav4 {
+    display: flex;
+    gap: 15px;
+    width: 130px;
+    margin-left: 0px;
+}
+
+.sNavTitle {
+    font-family: 'montserrat', serif;
+    font-weight: 700px;
+    font-size: 10px;
+    line-height: 12.19px;
+    color: #bdbdbd;
+    margin-top: 20px;
+}
+
+.sNavDescription {
+    font-family: 'montserrat', serif;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #333333;
+    margin-top: 8px;
+}
+
+.sNav1 .material-symbols-outlined, .sNav1 .sNavTitle, .sNav1 .sNavDescription {
+    color: #f2994a;
+}
+
+/* css for footer */
+
+footer {
+    grid-area: footer;
+    font-family: 'montserrat', serif;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 17.07px;
+    margin-top: 200px;
+    color: #828282;
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+    font-weight: 700;
+}
+
