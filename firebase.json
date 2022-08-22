@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site":"recipe-page-challenge",
     "public": "public",
     "ignore": [
       "firebase.json",
